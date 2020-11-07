@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		"PasswordValidation::PasswordValidationPackageTests::ProductTarget" /* PasswordValidationPackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_31 /* Build configuration list for PBXAggregateTarget "PasswordValidationPackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_34 /* PBXTargetDependency */,
+			);
+			name = PasswordValidationPackageTests;
+			productName = PasswordValidationPackageTests;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		B8418B152553549300681158 /* Collection+PasswordRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8418B142553549300681158 /* Collection+PasswordRule.swift */; };
+		B8418B1F2553565400681158 /* String+Localisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8418B1E2553565400681158 /* String+Localisation.swift */; };
+		B8418B2D25535B9900681158 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8418B2C25535B9900681158 /* Int+Extensions.swift */; };
+		B8418B3F255366E100681158 /* UppercaseRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8418B3E255366E100681158 /* UppercaseRule.swift */; };
+		B8418B452553681100681158 /* RegexRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8418B442553681100681158 /* RegexRule.swift */; };
+		B8418B4C2553697300681158 /* CharacterRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8418B4B2553697300681158 /* CharacterRule.swift */; };
+		B8418B5A25536CEB00681158 /* LowercaseRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8418B5925536CEB00681158 /* LowercaseRule.swift */; };
+		B8418B6425536DDB00681158 /* NumericRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8418B6325536DDB00681158 /* NumericRule.swift */; };
+		B8418B6A25536EE200681158 /* CharacterSetRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8418B6925536EE200681158 /* CharacterSetRule.swift */; };
+		B84FC8F625505F28002FA099 /* PasswordRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84FC8F525505F28002FA099 /* PasswordRule.swift */; };
+		B84FC91125506140002FA099 /* SpecialCharacterRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84FC91025506140002FA099 /* SpecialCharacterRule.swift */; };
+		B84FC92F25507C01002FA099 /* MinCountRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84FC92E25507C01002FA099 /* MinCountRule.swift */; };
+		B84FC93525507C23002FA099 /* MaxCountRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84FC93425507C23002FA099 /* MaxCountRule.swift */; };
+		B8862A1225573A8A000FFBB4 /* String+CharacterCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8862A1125573A8A000FFBB4 /* String+CharacterCount.swift */; };
+		OBJ_22 /* String+PasswordRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* String+PasswordRule.swift */; };
+		OBJ_29 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_40 /* PasswordValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* PasswordValidationTests.swift */; };
+		OBJ_41 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* XCTestManifests.swift */; };
+		OBJ_43 /* PasswordValidation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "PasswordValidation::PasswordValidation::Product" /* PasswordValidation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B84FC8E925505D65002FA099 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "PasswordValidation::PasswordValidation";
+			remoteInfo = PasswordValidation;
+		};
+		B84FC8EC25505D66002FA099 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "PasswordValidation::PasswordValidationTests";
+			remoteInfo = PasswordValidationTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B8418B142553549300681158 /* Collection+PasswordRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+PasswordRule.swift"; sourceTree = "<group>"; };
+		B8418B1E2553565400681158 /* String+Localisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localisation.swift"; sourceTree = "<group>"; };
+		B8418B2C25535B9900681158 /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		B8418B3E255366E100681158 /* UppercaseRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UppercaseRule.swift; sourceTree = "<group>"; };
+		B8418B442553681100681158 /* RegexRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexRule.swift; sourceTree = "<group>"; };
+		B8418B4B2553697300681158 /* CharacterRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRule.swift; sourceTree = "<group>"; };
+		B8418B5925536CEB00681158 /* LowercaseRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowercaseRule.swift; sourceTree = "<group>"; };
+		B8418B6325536DDB00681158 /* NumericRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericRule.swift; sourceTree = "<group>"; };
+		B8418B6925536EE200681158 /* CharacterSetRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSetRule.swift; sourceTree = "<group>"; };
+		B84FC8F525505F28002FA099 /* PasswordRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRule.swift; sourceTree = "<group>"; };
+		B84FC91025506140002FA099 /* SpecialCharacterRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialCharacterRule.swift; sourceTree = "<group>"; };
+		B84FC92E25507C01002FA099 /* MinCountRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinCountRule.swift; sourceTree = "<group>"; };
+		B84FC93425507C23002FA099 /* MaxCountRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxCountRule.swift; sourceTree = "<group>"; };
+		B8862A1125573A8A000FFBB4 /* String+CharacterCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+CharacterCount.swift"; sourceTree = "<group>"; };
+		OBJ_12 /* PasswordValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordValidationTests.swift; sourceTree = "<group>"; };
+		OBJ_13 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_9 /* String+PasswordRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+PasswordRule.swift"; sourceTree = "<group>"; };
+		"PasswordValidation::PasswordValidation::Product" /* PasswordValidation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PasswordValidation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"PasswordValidation::PasswordValidationTests::Product" /* PasswordValidationTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = PasswordValidationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_43 /* PasswordValidation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B84FC901255060BC002FA099 /* Rules */ = {
+			isa = PBXGroup;
+			children = (
+				B88629F325569CE0000FFBB4 /* Abstract */,
+				B84FC92E25507C01002FA099 /* MinCountRule.swift */,
+				B84FC93425507C23002FA099 /* MaxCountRule.swift */,
+				B8418B5925536CEB00681158 /* LowercaseRule.swift */,
+				B8418B3E255366E100681158 /* UppercaseRule.swift */,
+				B8418B6325536DDB00681158 /* NumericRule.swift */,
+				B84FC91025506140002FA099 /* SpecialCharacterRule.swift */,
+				B8418B442553681100681158 /* RegexRule.swift */,
+			);
+			path = Rules;
+			sourceTree = "<group>";
+		};
+		B88629F325569CE0000FFBB4 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				B8418B4B2553697300681158 /* CharacterRule.swift */,
+				B8418B6925536EE200681158 /* CharacterSetRule.swift */,
+			);
+			path = Abstract;
+			sourceTree = "<group>";
+		};
+		B8862A1025573865000FFBB4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* String+PasswordRule.swift */,
+				B8418B1E2553565400681158 /* String+Localisation.swift */,
+				B8418B142553549300681158 /* Collection+PasswordRule.swift */,
+				B8418B2C25535B9900681158 /* Int+Extensions.swift */,
+				B8862A1125573A8A000FFBB4 /* String+CharacterCount.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		OBJ_10 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_11 /* PasswordValidationTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_11 /* PasswordValidationTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_12 /* PasswordValidationTests.swift */,
+				OBJ_13 /* XCTestManifests.swift */,
+			);
+			name = PasswordValidationTests;
+			path = Tests/PasswordValidationTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"PasswordValidation::PasswordValidation::Product" /* PasswordValidation.framework */,
+				"PasswordValidation::PasswordValidationTests::Product" /* PasswordValidationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_5 = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_10 /* Tests */,
+				OBJ_14 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* PasswordValidation */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* PasswordValidation */ = {
+			isa = PBXGroup;
+			children = (
+				B84FC8F525505F28002FA099 /* PasswordRule.swift */,
+				B8862A1025573865000FFBB4 /* Extensions */,
+				B84FC901255060BC002FA099 /* Rules */,
+			);
+			name = PasswordValidation;
+			path = Sources/PasswordValidation;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"PasswordValidation::PasswordValidation" /* PasswordValidation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_18 /* Build configuration list for PBXNativeTarget "PasswordValidation" */;
+			buildPhases = (
+				OBJ_21 /* Sources */,
+				OBJ_23 /* Frameworks */,
+				B8862A1725574E32000FFBB4 /* Swift Lint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PasswordValidation;
+			productName = PasswordValidation;
+			productReference = "PasswordValidation::PasswordValidation::Product" /* PasswordValidation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"PasswordValidation::PasswordValidationTests" /* PasswordValidationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_36 /* Build configuration list for PBXNativeTarget "PasswordValidationTests" */;
+			buildPhases = (
+				OBJ_39 /* Sources */,
+				OBJ_42 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_44 /* PBXTargetDependency */,
+			);
+			name = PasswordValidationTests;
+			productName = PasswordValidationTests;
+			productReference = "PasswordValidation::PasswordValidationTests::Product" /* PasswordValidationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"PasswordValidation::SwiftPMPackageDescription" /* PasswordValidationPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_25 /* Build configuration list for PBXNativeTarget "PasswordValidationPackageDescription" */;
+			buildPhases = (
+				OBJ_28 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PasswordValidationPackageDescription;
+			productName = PasswordValidationPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 9999;
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "PasswordValidation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5;
+			productRefGroup = OBJ_14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"PasswordValidation::PasswordValidation" /* PasswordValidation */,
+				"PasswordValidation::SwiftPMPackageDescription" /* PasswordValidationPackageDescription */,
+				"PasswordValidation::PasswordValidationPackageTests::ProductTarget" /* PasswordValidationPackageTests */,
+				"PasswordValidation::PasswordValidationTests" /* PasswordValidationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B8862A1725574E32000FFBB4 /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				B8418B152553549300681158 /* Collection+PasswordRule.swift in Sources */,
+				B8418B3F255366E100681158 /* UppercaseRule.swift in Sources */,
+				B8418B4C2553697300681158 /* CharacterRule.swift in Sources */,
+				B84FC8F625505F28002FA099 /* PasswordRule.swift in Sources */,
+				B8418B6A25536EE200681158 /* CharacterSetRule.swift in Sources */,
+				B84FC92F25507C01002FA099 /* MinCountRule.swift in Sources */,
+				B8418B6425536DDB00681158 /* NumericRule.swift in Sources */,
+				B84FC91125506140002FA099 /* SpecialCharacterRule.swift in Sources */,
+				B8418B452553681100681158 /* RegexRule.swift in Sources */,
+				B8418B5A25536CEB00681158 /* LowercaseRule.swift in Sources */,
+				B8862A1225573A8A000FFBB4 /* String+CharacterCount.swift in Sources */,
+				OBJ_22 /* String+PasswordRule.swift in Sources */,
+				B8418B2D25535B9900681158 /* Int+Extensions.swift in Sources */,
+				B84FC93525507C23002FA099 /* MaxCountRule.swift in Sources */,
+				B8418B1F2553565400681158 /* String+Localisation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_29 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_40 /* PasswordValidationTests.swift in Sources */,
+				OBJ_41 /* XCTestManifests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "PasswordValidation::PasswordValidationTests" /* PasswordValidationTests */;
+			targetProxy = B84FC8EC25505D66002FA099 /* PBXContainerItemProxy */;
+		};
+		OBJ_44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "PasswordValidation::PasswordValidation" /* PasswordValidation */;
+			targetProxy = B84FC8E925505D65002FA099 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PasswordValidation.xcodeproj/PasswordValidation_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MARKETING_VERSION = 1.0.0;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = PasswordValidation;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = PasswordValidation;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PasswordValidation.xcodeproj/PasswordValidation_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MARKETING_VERSION = 1.0.0;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = PasswordValidation;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = PasswordValidation;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.3.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.3.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+					"DEBUG=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PasswordValidation.xcodeproj/PasswordValidationTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = PasswordValidationTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PasswordValidation.xcodeproj/PasswordValidationTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = PasswordValidationTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_18 /* Build configuration list for PBXNativeTarget "PasswordValidation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_19 /* Debug */,
+				OBJ_20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_2 /* Build configuration list for PBXProject "PasswordValidation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_25 /* Build configuration list for PBXNativeTarget "PasswordValidationPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_26 /* Debug */,
+				OBJ_27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_31 /* Build configuration list for PBXAggregateTarget "PasswordValidationPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_32 /* Debug */,
+				OBJ_33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_36 /* Build configuration list for PBXNativeTarget "PasswordValidationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_37 /* Debug */,
+				OBJ_38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}

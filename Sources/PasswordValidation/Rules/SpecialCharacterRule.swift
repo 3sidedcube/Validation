@@ -1,0 +1,46 @@
+//
+//  SpecialCharacterRule.swift
+//  PasswordValidation
+//
+//  Created by Ben Shutt on 02/11/2020.
+//
+
+import Foundation
+
+/// `PasswordRule` checking if a given password has a sufficient number of special characters.
+/// Specifically, assert `password` contains at least `nCharacters` special characters.
+public class SpecialCharacterRule: CharacterSetRule {
+
+    /// Initialize with `nCharacters` using `String.specialCharacters` for `characterSet`
+    ///
+    /// - Parameters:
+    ///   - nCharacters: `Int` defaulting to 1
+    ///   - string: `String` special characters as a `String`
+    init(
+        nCharacters: Int = 1,
+        charactersIn string: String = .specialCharacters
+    ) {
+        super.init(
+            nCharacters: nCharacters,
+            characterSet: CharacterSet(charactersIn: string)
+        )
+    }
+
+    // MARK: - PasswordRule
+
+    public override var rule: String {
+        return "Password must have at least \(nCharacters) special character\(nCharacters.s)"
+    }
+
+    public override var localizationKey: String {
+        return "_PASSWORD_RULE_SPECIAL_CHARACTER"
+    }
+}
+
+// MARK: - String + SpecialCharacters
+
+public extension String {
+
+    /// Default special characters
+    static let specialCharacters = ",./?<>!@£$%^&*()-_=+{}[]'\"\\|`~"
+}
