@@ -28,6 +28,7 @@ public protocol CharacterRuleAbstract: ValidationRule {
 ///
 /// - Note:
 /// `validateCharacter()` is abstract and should be overridden in the subclass.
+// swiftlint:disable unavailable_function
 public class CharacterRule: CharacterRuleAbstract {
 
     /// Number of character occurrences required
@@ -72,3 +73,4 @@ public class CharacterRule: CharacterRuleAbstract {
         }
     }
 }
+// swiftlint:enable unavailable_function

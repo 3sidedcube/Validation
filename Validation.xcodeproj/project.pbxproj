@@ -37,7 +37,7 @@
 		OBJ_53 /* SpecialCharacterRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* SpecialCharacterRule.swift */; };
 		OBJ_54 /* UppercaseRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* UppercaseRule.swift */; };
 		OBJ_61 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_72 /* PasswordValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* PasswordValidationTests.swift */; };
+		OBJ_72 /* ValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* ValidationTests.swift */; };
 		OBJ_73 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* XCTestManifests.swift */; };
 		OBJ_75 /* Validation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Validation::Validation::Product" /* Validation.framework */; };
 /* End PBXBuildFile section */
@@ -74,7 +74,7 @@
 		OBJ_23 /* RegexRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexRule.swift; sourceTree = "<group>"; };
 		OBJ_24 /* SpecialCharacterRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialCharacterRule.swift; sourceTree = "<group>"; };
 		OBJ_25 /* UppercaseRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UppercaseRule.swift; sourceTree = "<group>"; };
-		OBJ_28 /* PasswordValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordValidationTests.swift; sourceTree = "<group>"; };
+		OBJ_28 /* ValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationTests.swift; sourceTree = "<group>"; };
 		OBJ_29 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		OBJ_33 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		OBJ_34 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -138,7 +138,7 @@
 		OBJ_27 /* ValidationTests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_28 /* PasswordValidationTests.swift */,
+				OBJ_28 /* ValidationTests.swift */,
 				OBJ_29 /* XCTestManifests.swift */,
 			);
 			name = ValidationTests;
@@ -210,6 +210,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_36 /* Build configuration list for PBXNativeTarget "Validation" */;
 			buildPhases = (
+				B8540E8F25ACA83E0004BA32 /* SwiftLint */,
 				OBJ_39 /* Sources */,
 				OBJ_55 /* Frameworks */,
 			);
@@ -268,6 +269,27 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B8540E8F25ACA83E0004BA32 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		OBJ_39 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -303,7 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_72 /* PasswordValidationTests.swift in Sources */,
+				OBJ_72 /* ValidationTests.swift in Sources */,
 				OBJ_73 /* XCTestManifests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

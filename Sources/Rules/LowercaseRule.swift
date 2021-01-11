@@ -23,11 +23,11 @@ public class LowercaseRule: CharacterSetRule {
 
     // MARK: - ValidationRule
 
-    public override var rule: String {
+    override public var rule: String {
         return "Input must have at least \(nCharacters) lowercase character\(nCharacters.s)"
     }
 
-    public override var localizationKey: String {
+    override public var localizationKey: String {
         return "_VALIDATION_RULE_LOWERCASE"
     }
 }

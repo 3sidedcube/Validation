@@ -10,7 +10,7 @@ let package = Package(
         .library(
             name: "Validation",
             targets: ["Validation"]
-        ),
+        )
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -27,6 +27,6 @@ let package = Package(
         .testTarget(
             name: "ValidationTests",
             dependencies: ["Validation"]
-        ),
+        )
     ]
 )

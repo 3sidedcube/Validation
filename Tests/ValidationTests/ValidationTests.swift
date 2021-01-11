@@ -1,7 +1,6 @@
 import XCTest
 @testable import Validation
 
-/// TODO - Add test for each rule
 final class ValidationTests: XCTestCase {
 
     override func setUp() {
