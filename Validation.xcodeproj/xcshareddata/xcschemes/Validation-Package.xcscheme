@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "PasswordValidation::PasswordValidation"
-               BuildableName = "PasswordValidation.framework"
-               BlueprintName = "PasswordValidation"
-               ReferencedContainer = "container:PasswordValidation.xcodeproj">
+               BlueprintIdentifier = "Validation::Validation"
+               BuildableName = "Validation.framework"
+               BlueprintName = "Validation"
+               ReferencedContainer = "container:Validation.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "PasswordValidation::PasswordValidationTests"
-               BuildableName = "PasswordValidationTests.xctest"
-               BlueprintName = "PasswordValidationTests"
-               ReferencedContainer = "container:PasswordValidation.xcodeproj">
+               BlueprintIdentifier = "Validation::ValidationTests"
+               BuildableName = "ValidationTests.xctest"
+               BlueprintName = "ValidationTests"
+               ReferencedContainer = "container:Validation.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>

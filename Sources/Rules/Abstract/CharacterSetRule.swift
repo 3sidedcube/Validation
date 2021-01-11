@@ -1,16 +1,16 @@
 //
 //  CharacterSetRule.swift
-//  PasswordValidation
+//  Validation
 //
 //  Created by Ben Shutt on 04/11/2020.
 //
 
 import Foundation
 
-/// A `PasswordRule` checking if a given password has a sufficient number of characters
+/// A `ValidationRule` checking if a given entity has a sufficient number of characters
 /// (or unicode scalars) from a given `CharacterSet`.
 ///
-/// Specifically, assert `password` contains at least `nCharacters` from `characterSet`.
+/// Specifically, assert `string` contains at least `nCharacters` from `characterSet`.
 ///
 /// - Warning:
 /// This class is abstract, subclasses should implement the abstract methods.
@@ -18,7 +18,7 @@ import Foundation
 /// - Note:
 /// In the context of `CharacterSet` we talk about `UnicodeScalarView`s
 /// rather than `Character`s
-public class CharacterSetRule: PasswordRule {
+public class CharacterSetRule: ValidationRule {
 
     /// Number of character occurrences required
     public var nCharacters: Int
@@ -55,10 +55,10 @@ public class CharacterSetRule: PasswordRule {
         )
     }
 
-    // MARK: - Password Rule
+    // MARK: - ValidationRule
 
-    public func validate(password: String) -> Bool {
-        return password.enumerateUnicodeScalars(nOccurrences: nCharacters) {
+    public func validate(string: String) -> Bool {
+        return string.enumerateUnicodeScalars(nOccurrences: nCharacters) {
             return characterSet.contains($0)
         }
     }

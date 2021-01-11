@@ -1,14 +1,14 @@
 //
 //  NumericRule.swift
-//  PasswordValidation
+//  Validation
 //
 //  Created by Ben Shutt on 04/11/2020.
 //
 
 import Foundation
 
-/// `PasswordRule` checking if a given password has a sufficient number of numeric characters.
-/// Specifically, assert `password` contains at least `nCharacters` numeric characters.
+/// `ValidationRule` checking if a given entity has a sufficient number of numeric characters.
+/// Specifically, assert `string` contains at least `nCharacters` numeric characters.
 public class NumericRule: CharacterSetRule {
 
     /// Initialize with `nCharacters` using `String.numeric` for `characterSet`
@@ -21,14 +21,14 @@ public class NumericRule: CharacterSetRule {
         )
     }
 
-    // MARK: - PasswordRule
+    // MARK: - ValidationRule
 
     public override var rule: String {
-        return "Password must have at least \(nCharacters) numeric character\(nCharacters.s)"
+        return "Input must have at least \(nCharacters) numeric character\(nCharacters.s)"
     }
 
     public override var localizationKey: String {
-        return "_PASSWORD_RULE_NUMERIC"
+        return "_VALIDATION_RULE_NUMERIC"
     }
 }
 

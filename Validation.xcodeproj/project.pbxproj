@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		"Validation::ValidationPackageTests::ProductTarget" /* ValidationPackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_63 /* Build configuration list for PBXAggregateTarget "ValidationPackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_66 /* PBXTargetDependency */,
+			);
+			name = ValidationPackageTests;
+			productName = ValidationPackageTests;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		B8540E8625ACA77C0004BA32 /* ValidationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* ValidationRule.swift */; };
+		OBJ_40 /* Collection+ValidationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Collection+ValidationRule.swift */; };
+		OBJ_41 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Int+Extensions.swift */; };
+		OBJ_42 /* String+CharacterCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* String+CharacterCount.swift */; };
+		OBJ_43 /* String+Localisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* String+Localisation.swift */; };
+		OBJ_44 /* String+ValidationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* String+ValidationRule.swift */; };
+		OBJ_46 /* CharacterRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* CharacterRule.swift */; };
+		OBJ_47 /* CharacterSetRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* CharacterSetRule.swift */; };
+		OBJ_48 /* LowercaseRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* LowercaseRule.swift */; };
+		OBJ_49 /* MaxCountRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* MaxCountRule.swift */; };
+		OBJ_50 /* MinCountRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* MinCountRule.swift */; };
+		OBJ_51 /* NumericRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* NumericRule.swift */; };
+		OBJ_52 /* RegexRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* RegexRule.swift */; };
+		OBJ_53 /* SpecialCharacterRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* SpecialCharacterRule.swift */; };
+		OBJ_54 /* UppercaseRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* UppercaseRule.swift */; };
+		OBJ_61 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_72 /* PasswordValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* PasswordValidationTests.swift */; };
+		OBJ_73 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* XCTestManifests.swift */; };
+		OBJ_75 /* Validation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Validation::Validation::Product" /* Validation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B8540E5B25ACA2CF0004BA32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Validation::Validation";
+			remoteInfo = Validation;
+		};
+		B8540E5E25ACA2D00004BA32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Validation::ValidationTests";
+			remoteInfo = ValidationTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		OBJ_10 /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		OBJ_11 /* String+CharacterCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+CharacterCount.swift"; sourceTree = "<group>"; };
+		OBJ_12 /* String+Localisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localisation.swift"; sourceTree = "<group>"; };
+		OBJ_13 /* String+ValidationRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ValidationRule.swift"; sourceTree = "<group>"; };
+		OBJ_14 /* ValidationRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationRule.swift; sourceTree = "<group>"; };
+		OBJ_17 /* CharacterRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRule.swift; sourceTree = "<group>"; };
+		OBJ_18 /* CharacterSetRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSetRule.swift; sourceTree = "<group>"; };
+		OBJ_19 /* LowercaseRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowercaseRule.swift; sourceTree = "<group>"; };
+		OBJ_20 /* MaxCountRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxCountRule.swift; sourceTree = "<group>"; };
+		OBJ_21 /* MinCountRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinCountRule.swift; sourceTree = "<group>"; };
+		OBJ_22 /* NumericRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericRule.swift; sourceTree = "<group>"; };
+		OBJ_23 /* RegexRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexRule.swift; sourceTree = "<group>"; };
+		OBJ_24 /* SpecialCharacterRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialCharacterRule.swift; sourceTree = "<group>"; };
+		OBJ_25 /* UppercaseRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UppercaseRule.swift; sourceTree = "<group>"; };
+		OBJ_28 /* PasswordValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordValidationTests.swift; sourceTree = "<group>"; };
+		OBJ_29 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		OBJ_33 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		OBJ_34 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_9 /* Collection+ValidationRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+ValidationRule.swift"; sourceTree = "<group>"; };
+		"Validation::Validation::Product" /* Validation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Validation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Validation::ValidationTests::Product" /* ValidationTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = ValidationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_75 /* Validation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		OBJ_15 /* Rules */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_16 /* Abstract */,
+				OBJ_21 /* MinCountRule.swift */,
+				OBJ_20 /* MaxCountRule.swift */,
+				OBJ_19 /* LowercaseRule.swift */,
+				OBJ_25 /* UppercaseRule.swift */,
+				OBJ_22 /* NumericRule.swift */,
+				OBJ_24 /* SpecialCharacterRule.swift */,
+				OBJ_23 /* RegexRule.swift */,
+			);
+			path = Rules;
+			sourceTree = "<group>";
+		};
+		OBJ_16 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_17 /* CharacterRule.swift */,
+				OBJ_18 /* CharacterSetRule.swift */,
+			);
+			path = Abstract;
+			sourceTree = "<group>";
+		};
+		OBJ_26 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_27 /* ValidationTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_27 /* ValidationTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_28 /* PasswordValidationTests.swift */,
+				OBJ_29 /* XCTestManifests.swift */,
+			);
+			name = ValidationTests;
+			path = Tests/ValidationTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"Validation::Validation::Product" /* Validation.framework */,
+				"Validation::ValidationTests::Product" /* ValidationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_26 /* Tests */,
+				OBJ_30 /* Products */,
+				OBJ_33 /* LICENSE */,
+				OBJ_34 /* README.md */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_15 /* Rules */,
+				OBJ_8 /* Extensions */,
+				OBJ_14 /* ValidationRule.swift */,
+			);
+			path = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* Collection+ValidationRule.swift */,
+				OBJ_10 /* Int+Extensions.swift */,
+				OBJ_11 /* String+CharacterCount.swift */,
+				OBJ_12 /* String+Localisation.swift */,
+				OBJ_13 /* String+ValidationRule.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"Validation::SwiftPMPackageDescription" /* ValidationPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_57 /* Build configuration list for PBXNativeTarget "ValidationPackageDescription" */;
+			buildPhases = (
+				OBJ_60 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ValidationPackageDescription;
+			productName = ValidationPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"Validation::Validation" /* Validation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_36 /* Build configuration list for PBXNativeTarget "Validation" */;
+			buildPhases = (
+				OBJ_39 /* Sources */,
+				OBJ_55 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Validation;
+			productName = Validation;
+			productReference = "Validation::Validation::Product" /* Validation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Validation::ValidationTests" /* ValidationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_68 /* Build configuration list for PBXNativeTarget "ValidationTests" */;
+			buildPhases = (
+				OBJ_71 /* Sources */,
+				OBJ_74 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_76 /* PBXTargetDependency */,
+			);
+			name = ValidationTests;
+			productName = ValidationTests;
+			productReference = "Validation::ValidationTests::Product" /* ValidationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 9999;
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Validation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"Validation::Validation" /* Validation */,
+				"Validation::SwiftPMPackageDescription" /* ValidationPackageDescription */,
+				"Validation::ValidationPackageTests::ProductTarget" /* ValidationPackageTests */,
+				"Validation::ValidationTests" /* ValidationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_40 /* Collection+ValidationRule.swift in Sources */,
+				OBJ_41 /* Int+Extensions.swift in Sources */,
+				OBJ_42 /* String+CharacterCount.swift in Sources */,
+				OBJ_43 /* String+Localisation.swift in Sources */,
+				OBJ_44 /* String+ValidationRule.swift in Sources */,
+				OBJ_46 /* CharacterRule.swift in Sources */,
+				OBJ_47 /* CharacterSetRule.swift in Sources */,
+				OBJ_48 /* LowercaseRule.swift in Sources */,
+				OBJ_49 /* MaxCountRule.swift in Sources */,
+				OBJ_50 /* MinCountRule.swift in Sources */,
+				OBJ_51 /* NumericRule.swift in Sources */,
+				OBJ_52 /* RegexRule.swift in Sources */,
+				B8540E8625ACA77C0004BA32 /* ValidationRule.swift in Sources */,
+				OBJ_53 /* SpecialCharacterRule.swift in Sources */,
+				OBJ_54 /* UppercaseRule.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_61 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_72 /* PasswordValidationTests.swift in Sources */,
+				OBJ_73 /* XCTestManifests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Validation::ValidationTests" /* ValidationTests */;
+			targetProxy = B8540E5E25ACA2D00004BA32 /* PBXContainerItemProxy */;
+		};
+		OBJ_76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Validation::Validation" /* Validation */;
+			targetProxy = B8540E5B25ACA2CF0004BA32 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+					"DEBUG=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Validation.xcodeproj/Validation_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MARKETING_VERSION = 1.0.0;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Validation;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Validation;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Validation.xcodeproj/Validation_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MARKETING_VERSION = 1.0.0;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Validation;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Validation;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -package-description-version 5.3.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -package-description-version 5.3.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Validation.xcodeproj/ValidationTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = ValidationTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Validation.xcodeproj/ValidationTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = ValidationTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_2 /* Build configuration list for PBXProject "Validation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_36 /* Build configuration list for PBXNativeTarget "Validation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_37 /* Debug */,
+				OBJ_38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_57 /* Build configuration list for PBXNativeTarget "ValidationPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_58 /* Debug */,
+				OBJ_59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_63 /* Build configuration list for PBXAggregateTarget "ValidationPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_64 /* Debug */,
+				OBJ_65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_68 /* Build configuration list for PBXNativeTarget "ValidationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_69 /* Debug */,
+				OBJ_70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}

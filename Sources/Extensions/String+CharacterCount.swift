@@ -1,6 +1,6 @@
 //
 //  String+CharacterCount.swift
-//  PasswordValidation
+//  Validation
 //
 //  Created by Ben Shutt on 07/11/2020.
 //
@@ -69,7 +69,7 @@ internal extension Sequence {
             return true
         }
 
-        // Accumulation of occurances to increment
+        // Accumulation of occurrences to increment
         var count = 0
 
         // Iterate characters

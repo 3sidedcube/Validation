@@ -1,6 +1,6 @@
 //
 //  CharacterRule.swift
-//  PasswordValidation
+//  Validation
 //
 //  Created by Ben Shutt on 04/11/2020.
 //
@@ -10,7 +10,7 @@ import Foundation
 // MARK: - CharacterRuleAbstract
 
 /// Abstract methods in `CharacterRule`
-public protocol CharacterRuleAbstract: PasswordRule {
+public protocol CharacterRuleAbstract: ValidationRule {
 
     /// Return if `character` is valid and should pass validation
     ///
@@ -20,7 +20,7 @@ public protocol CharacterRuleAbstract: PasswordRule {
 
 // MARK: - CharacterRule
 
-/// A `PasswordRule` which enumerates the `Character`s in a `String` counting
+/// A `ValidationRule` which enumerates the `Character`s in a `String` counting
 /// the number of occurances of characters returning `true` from `validateCharacter(_:)`.
 ///
 /// - Warning:
@@ -58,16 +58,16 @@ public class CharacterRule: CharacterRuleAbstract {
         fatalError("Abstract")
     }
 
-    // MARK: - PasswordRule
+    // MARK: - ValidationRule
 
-    /// Enumerate `password` executing `validateCharacter(_:)` for each `Character`.
+    /// Enumerate `string` executing `validateCharacter(_:)` for each `Character`.
     /// If `true` increment an accumulation variable. If that accumulation reaches `nCharacters`
     /// return `true`, otherwise return `false`
     ///
-    /// - Parameter password: `String` password
+    /// - Parameter string: `String` input
     /// - Returns: Success or failure
-    public func validate(password: String) -> Bool {
-        return password.enumerateCharacters(nOccurrences: nCharacters) {
+    public func validate(string: String) -> Bool {
+        return string.enumerateCharacters(nOccurrences: nCharacters) {
             return validateCharacter($0)
         }
     }

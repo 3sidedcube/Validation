@@ -1,6 +1,6 @@
 //
 //  String+Localisation.swift
-//  PasswordValidation
+//  Validation
 //
 //  Created by Ben Shutt on 04/11/2020.
 //

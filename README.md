@@ -1,4 +1,4 @@
-# PasswordValidation
+# Validation
 
 ```swift
 let password = "password"

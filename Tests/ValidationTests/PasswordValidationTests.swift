@@ -1,8 +1,8 @@
 import XCTest
-@testable import PasswordValidation
+@testable import Validation
 
 /// TODO - Add test for each rule
-final class PasswordValidationTests: XCTestCase {
+final class ValidationTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
@@ -10,9 +10,9 @@ final class PasswordValidationTests: XCTestCase {
         continueAfterFailure = false
     }
 
-    func testPasswordValidation_1() {
+    func testValidation_1() {
         let password = "Password-123!"
-        let failedRules = password.validatePassword(with: [
+        let failedRules = password.validate(with: [
             MinCountRule(min: 5),
             MaxCountRule(max: 20),
             SpecialCharacterRule(),
@@ -24,9 +24,9 @@ final class PasswordValidationTests: XCTestCase {
         XCTAssertTrue(failedRules.isValid)
     }
 
-    func testPasswordValidation_2() {
+    func testValidation_2() {
         let password = "password"
-        let failedRules = password.validatePassword(with: [
+        let failedRules = password.validate(with: [
             MinCountRule(min: 5),
             MaxCountRule(max: 20),
             SpecialCharacterRule(),
@@ -42,9 +42,9 @@ final class PasswordValidationTests: XCTestCase {
         XCTAssertTrue(failedRules[2] is NumericRule)
     }
 
-    func testPasswordValidation_3() {
+    func testValidation_3() {
         let password = "!(@$J df😀*($K!JfkΩ "
-        let failedRules = password.validatePassword(with: [
+        let failedRules = password.validate(with: [
             MinCountRule(min: 20),
             MaxCountRule(max: 21),
             SpecialCharacterRule(nCharacters: 6),

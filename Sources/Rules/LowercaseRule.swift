@@ -1,14 +1,14 @@
 //
 //  LowercaseRule.swift
-//  PasswordValidation
+//  Validation
 //
 //  Created by Ben Shutt on 04/11/2020.
 //
 
 import Foundation
 
-/// `PasswordRule` checking if a given password has a sufficient number of lowercase characters.
-/// Specifically, assert `password` contains at least `nCharacters` lowercase characters.
+/// `ValidationRule` checking if a given entity has a sufficient number of lowercase characters.
+/// Specifically, assert `string` contains at least `nCharacters` lowercase characters.
 public class LowercaseRule: CharacterSetRule {
 
     /// Initialize with `nCharacters` using `.lowercaseLetters` for `characterSet`
@@ -21,13 +21,13 @@ public class LowercaseRule: CharacterSetRule {
         )
     }
 
-    // MARK: - PasswordRule
+    // MARK: - ValidationRule
 
     public override var rule: String {
-        return "Password must have at least \(nCharacters) lowercase character\(nCharacters.s)"
+        return "Input must have at least \(nCharacters) lowercase character\(nCharacters.s)"
     }
 
     public override var localizationKey: String {
-        return "_PASSWORD_RULE_LOWERCASE"
+        return "_VALIDATION_RULE_LOWERCASE"
     }
 }
