@@ -2,7 +2,7 @@
 
 ```swift
 let password = "password"
-let failedRules = password.validatePassword(with: [
+let failedRules = password.validate(with: [
     MinCountRule(min: 5),
     MaxCountRule(max: 20),
     SpecialCharacterRule(),
