@@ -15,7 +15,7 @@ public extension String {
         return rules.filter { !$0.validate(string: self) }
     }
 
-    /// Invoke `validate(with:)` checking the returned failed rules array is empty.
+    /// Invoke `validate(with:)` checking the returned failed rules array `isValid`.
     ///
     /// - Parameter rules: `[ValidationRule]` to check
     /// - Returns: `Bool` `true` if the entity is valid according to the given `rules`
