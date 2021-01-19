@@ -45,7 +45,7 @@ public class CharacterSetRule: ValidationRule {
     /// - Parameters:
     ///   - nCharacters: `Int`
     ///   - string: `String`
-    convenience init(
+    public convenience init(
         nCharacters: Int = 1,
         charactersIn string: String
     ) {

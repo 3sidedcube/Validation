@@ -16,7 +16,7 @@ public class SpecialCharacterRule: CharacterSetRule {
     /// - Parameters:
     ///   - nCharacters: `Int` defaulting to 1
     ///   - string: `String` special characters as a `String`
-    init(
+    public init(
         nCharacters: Int = 1,
         charactersIn string: String = .specialCharacters
     ) {

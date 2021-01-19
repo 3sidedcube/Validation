@@ -14,7 +14,7 @@ public class NumericRule: CharacterSetRule {
     /// Initialize with `nCharacters` using `String.numeric` for `characterSet`
     ///
     /// - Parameter nCharacters: `Int` defaulting to 1
-    init(nCharacters: Int = 1) {
+    public init(nCharacters: Int = 1) {
         super.init(
             nCharacters: nCharacters,
             characterSet: CharacterSet(charactersIn: .numeric)
