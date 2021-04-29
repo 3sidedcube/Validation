@@ -10,6 +10,11 @@ import XCTest
 #if !canImport(ObjectiveC)
 public func allTests() -> [XCTestCaseEntry] {
     return [
+        testCase(LowercaseRuleTests.allTests),
+        testCase(MaxCountRuleTests.allTests),
+        testCase(MinCountRuleTests.allTests),
+        testCase(NumericRuleTests.allTests),
+
         testCase(ValidationTests.allTests)
     ]
 }
