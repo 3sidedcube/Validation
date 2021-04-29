@@ -11,14 +11,16 @@ import XCTest
 final class UppercaseRuleTests: XCTestCase {
 
     func test() {
-        XCTAssertTrue("Hello".validate(with: [UppercaseRule()]).isValid)
-        XCTAssertTrue("HELLO THERE".validate(with: [UppercaseRule()]).isValid)
-        XCTAssertTrue("TeST 1".validate(with: [UppercaseRule()]).isValid)
-        XCTAssertTrue("Found one 🤞".validate(with: [UppercaseRule()]).isValid)
+        let rule = UppercaseRule()
 
-        XCTAssertFalse("".validate(with: [UppercaseRule()]).isValid)
-        XCTAssertFalse("hello".validate(with: [UppercaseRule()]).isValid)
-        XCTAssertFalse("here is more words".validate(with: [UppercaseRule()]).isValid)
-        XCTAssertFalse("10 is awesome 🎉".validate(with: [UppercaseRule()]).isValid)
+        XCTAssertTrue("Hello".validate(with: [rule]).isValid)
+        XCTAssertTrue("HELLO THERE".validate(with: [rule]).isValid)
+        XCTAssertTrue("TeST 1".validate(with: [rule]).isValid)
+        XCTAssertTrue("Found one 🤞".validate(with: [rule]).isValid)
+
+        XCTAssertFalse("".validate(with: [rule]).isValid)
+        XCTAssertFalse("hello".validate(with: [rule]).isValid)
+        XCTAssertFalse("here is more words".validate(with: [rule]).isValid)
+        XCTAssertFalse("10 is awesome 🎉".validate(with: [rule]).isValid)
     }
 }

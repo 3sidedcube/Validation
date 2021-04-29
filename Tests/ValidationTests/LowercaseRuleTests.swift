@@ -11,14 +11,16 @@ import XCTest
 final class LowercaseRuleTests: XCTestCase {
 
     func test() {
-        XCTAssertTrue("hello".validate(with: [LowercaseRule()]).isValid)
-        XCTAssertTrue("here is more words".validate(with: [LowercaseRule()]).isValid)
-        XCTAssertTrue("TeST 1".validate(with: [LowercaseRule()]).isValid)
-        XCTAssertTrue("10 is awesome 🎉".validate(with: [LowercaseRule()]).isValid)
+        let rule = LowercaseRule()
 
-        XCTAssertFalse("".validate(with: [LowercaseRule()]).isValid)
-        XCTAssertFalse("HELLO".validate(with: [LowercaseRule()]).isValid)
-        XCTAssertFalse("1".validate(with: [LowercaseRule()]).isValid)
-        XCTAssertFalse("😱".validate(with: [LowercaseRule()]).isValid)
+        XCTAssertTrue("hello".validate(with: [rule]).isValid)
+        XCTAssertTrue("here is more words".validate(with: [rule]).isValid)
+        XCTAssertTrue("TeST 1".validate(with: [rule]).isValid)
+        XCTAssertTrue("10 is awesome 🎉".validate(with: [rule]).isValid)
+
+        XCTAssertFalse("".validate(with: [rule]).isValid)
+        XCTAssertFalse("HELLO".validate(with: [rule]).isValid)
+        XCTAssertFalse("1".validate(with: [rule]).isValid)
+        XCTAssertFalse("😱".validate(with: [rule]).isValid)
     }
 }
