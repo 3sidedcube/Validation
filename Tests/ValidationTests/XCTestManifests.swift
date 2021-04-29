@@ -15,6 +15,7 @@ public func allTests() -> [XCTestCaseEntry] {
         testCase(MinCountRuleTests.allTests),
         testCase(NumericRuleTests.allTests),
         testCase(RegexRuleTests.allTests),
+        testCase(RuleTestsTests.allTests),
         testCase(SpecialCharacterRuleTests.allTests),
         testCase(UppercaseRuleTests.allTests),
 
