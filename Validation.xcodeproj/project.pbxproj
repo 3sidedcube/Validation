@@ -23,6 +23,7 @@
 /* Begin PBXBuildFile section */
 		B8540E8625ACA77C0004BA32 /* ValidationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* ValidationRule.swift */; };
 		B8F6BF51263B083600A23729 /* MinCountRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F6BF50263B083600A23729 /* MinCountRuleTests.swift */; };
+		B8F6BF6B263B19EC00A23729 /* MaxCountRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F6BF6A263B19EC00A23729 /* MaxCountRuleTests.swift */; };
 		OBJ_40 /* Collection+ValidationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Collection+ValidationRule.swift */; };
 		OBJ_41 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Int+Extensions.swift */; };
 		OBJ_42 /* String+CharacterCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* String+CharacterCount.swift */; };
@@ -62,6 +63,7 @@
 
 /* Begin PBXFileReference section */
 		B8F6BF50263B083600A23729 /* MinCountRuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinCountRuleTests.swift; sourceTree = "<group>"; };
+		B8F6BF6A263B19EC00A23729 /* MaxCountRuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxCountRuleTests.swift; sourceTree = "<group>"; };
 		OBJ_10 /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
 		OBJ_11 /* String+CharacterCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+CharacterCount.swift"; sourceTree = "<group>"; };
 		OBJ_12 /* String+Localisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localisation.swift"; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 		OBJ_27 /* ValidationTests */ = {
 			isa = PBXGroup;
 			children = (
+				B8F6BF6A263B19EC00A23729 /* MaxCountRuleTests.swift */,
 				B8F6BF50263B083600A23729 /* MinCountRuleTests.swift */,
 				OBJ_28 /* ValidationTests.swift */,
 				OBJ_29 /* XCTestManifests.swift */,
@@ -327,6 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				B8F6BF6B263B19EC00A23729 /* MaxCountRuleTests.swift in Sources */,
 				B8F6BF51263B083600A23729 /* MinCountRuleTests.swift in Sources */,
 				OBJ_72 /* ValidationTests.swift in Sources */,
 				OBJ_73 /* XCTestManifests.swift in Sources */,

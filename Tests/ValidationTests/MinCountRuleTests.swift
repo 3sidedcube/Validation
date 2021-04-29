@@ -33,4 +33,16 @@ final class MinCountRuleTests: XCTestCase {
         XCTAssertFalse(string.validate(with: [MinCountRule(min: 15)]).isValid)
         XCTAssertFalse(string.validate(with: [MinCountRule(min: 100)]).isValid)
     }
+
+    func testEmoji() {
+        let string = "hello 😃"
+
+        XCTAssertTrue(string.validate(with: [MinCountRule(min: 1)]).isValid)
+        XCTAssertTrue(string.validate(with: [MinCountRule(min: 6)]).isValid)
+        XCTAssertTrue(string.validate(with: [MinCountRule(min: 7)]).isValid)
+
+        XCTAssertFalse(string.validate(with: [MinCountRule(min: 8)]).isValid)
+        XCTAssertFalse(string.validate(with: [MinCountRule(min: 9)]).isValid)
+        XCTAssertFalse(string.validate(with: [MinCountRule(min: 10)]).isValid)
+    }
 }
