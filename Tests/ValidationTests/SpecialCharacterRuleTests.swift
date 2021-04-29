@@ -11,14 +11,31 @@ import XCTest
 final class SpecialCharacterRuleTests: XCTestCase {
 
     func test() {
-        XCTAssertTrue("*".validate(with: [SpecialCharacterRule()]).isValid)
-        XCTAssertTrue("Hello!".validate(with: [SpecialCharacterRule()]).isValid)
-        XCTAssertTrue("(test)".validate(with: [SpecialCharacterRule()]).isValid)
-        XCTAssertTrue("Boom<🎉>".validate(with: [LowercaseRule()]).isValid)
+        let rule = SpecialCharacterRule()
 
-        XCTAssertFalse("".validate(with: [SpecialCharacterRule()]).isValid)
-        XCTAssertFalse("Hello".validate(with: [SpecialCharacterRule()]).isValid)
-        XCTAssertFalse("1".validate(with: [SpecialCharacterRule()]).isValid)
-        XCTAssertFalse("😱".validate(with: [SpecialCharacterRule()]).isValid)
+        XCTAssertTrue("*".validate(with: [rule]).isValid)
+        XCTAssertTrue("Hello!".validate(with: [rule]).isValid)
+        XCTAssertTrue("(test)".validate(with: [rule]).isValid)
+        XCTAssertTrue("Boom<🎉>".validate(with: [rule]).isValid)
+
+        XCTAssertFalse("".validate(with: [rule]).isValid)
+        XCTAssertFalse("Hello".validate(with: [rule]).isValid)
+        XCTAssertFalse("1".validate(with: [rule]).isValid)
+        XCTAssertFalse("😱".validate(with: [rule]).isValid)
+    }
+
+    func testGivenSet() {
+        let rule = SpecialCharacterRule(
+            characterSet: CharacterSet(charactersIn: "🚀")
+        )
+
+        XCTAssertTrue("🚀".validate(with: [rule]).isValid)
+        XCTAssertTrue("Rocket 🚀 fire".validate(with: [rule]).isValid)
+
+        XCTAssertFalse("Hello".validate(with: [rule]).isValid)
+        XCTAssertFalse("Test!".validate(with: [rule]).isValid)
+        XCTAssertFalse("!@£$%^&*()_+{}'\\/<>?~`<,.".validate(with: [rule]).isValid)
+        XCTAssertFalse("😱".validate(with: [rule]).isValid)
+        XCTAssertFalse("Can it be 🎉".validate(with: [rule]).isValid)
     }
 }
