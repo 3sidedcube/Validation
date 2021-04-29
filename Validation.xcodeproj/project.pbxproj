@@ -28,6 +28,7 @@
 		B8F6BF83263B1F5300A23729 /* LowercaseRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F6BF82263B1F5300A23729 /* LowercaseRuleTests.swift */; };
 		B8F6BF8D263B207800A23729 /* UppercaseRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F6BF8C263B207800A23729 /* UppercaseRuleTests.swift */; };
 		B8F6BF93263B212800A23729 /* SpecialCharacterRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F6BF92263B212800A23729 /* SpecialCharacterRuleTests.swift */; };
+		B8F6BFA1263B237000A23729 /* RegexRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F6BFA0263B237000A23729 /* RegexRuleTests.swift */; };
 		OBJ_40 /* Collection+ValidationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Collection+ValidationRule.swift */; };
 		OBJ_41 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Int+Extensions.swift */; };
 		OBJ_42 /* String+CharacterCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* String+CharacterCount.swift */; };
@@ -72,6 +73,7 @@
 		B8F6BF82263B1F5300A23729 /* LowercaseRuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowercaseRuleTests.swift; sourceTree = "<group>"; };
 		B8F6BF8C263B207800A23729 /* UppercaseRuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UppercaseRuleTests.swift; sourceTree = "<group>"; };
 		B8F6BF92263B212800A23729 /* SpecialCharacterRuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialCharacterRuleTests.swift; sourceTree = "<group>"; };
+		B8F6BFA0263B237000A23729 /* RegexRuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexRuleTests.swift; sourceTree = "<group>"; };
 		OBJ_10 /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
 		OBJ_11 /* String+CharacterCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+CharacterCount.swift"; sourceTree = "<group>"; };
 		OBJ_12 /* String+Localisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localisation.swift"; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				B8F6BF6A263B19EC00A23729 /* MaxCountRuleTests.swift */,
 				B8F6BF50263B083600A23729 /* MinCountRuleTests.swift */,
 				B8F6BF78263B1E6200A23729 /* NumericRuleTests.swift */,
+				B8F6BFA0263B237000A23729 /* RegexRuleTests.swift */,
 				B8F6BF92263B212800A23729 /* SpecialCharacterRuleTests.swift */,
 				B8F6BF8C263B207800A23729 /* UppercaseRuleTests.swift */,
 				OBJ_28 /* ValidationTests.swift */,
@@ -348,6 +351,7 @@
 				B8F6BF93263B212800A23729 /* SpecialCharacterRuleTests.swift in Sources */,
 				B8F6BF79263B1E6200A23729 /* NumericRuleTests.swift in Sources */,
 				OBJ_72 /* ValidationTests.swift in Sources */,
+				B8F6BFA1263B237000A23729 /* RegexRuleTests.swift in Sources */,
 				OBJ_73 /* XCTestManifests.swift in Sources */,
 				B8F6BF83263B1F5300A23729 /* LowercaseRuleTests.swift in Sources */,
 			);
