@@ -1,15 +1,16 @@
+//
+//  ValidationTests.swift
+//  ValidationTests
+//
+//  Created by Ben Shutt on 02/11/2020.
+//
+
 import XCTest
 @testable import Validation
 
 final class ValidationTests: XCTestCase {
 
-    override func setUp() {
-        super.setUp()
-
-        continueAfterFailure = false
-    }
-
-    func testValidation_1() {
+    func testValidation1() {
         let password = "Password-123!"
         let failedRules = password.validate(with: [
             MinCountRule(min: 5),
@@ -23,7 +24,7 @@ final class ValidationTests: XCTestCase {
         XCTAssertTrue(failedRules.isValid)
     }
 
-    func testValidation_2() {
+    func testValidation2() {
         let password = "password"
         let failedRules = password.validate(with: [
             MinCountRule(min: 5),
@@ -41,7 +42,7 @@ final class ValidationTests: XCTestCase {
         XCTAssertTrue(failedRules[2] is NumericRule)
     }
 
-    func testValidation_3() {
+    func testValidation3() {
         let password = "!(@$J df😀*($K!JfkΩ "
         let failedRules = password.validate(with: [
             MinCountRule(min: 20),

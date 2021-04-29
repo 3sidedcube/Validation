@@ -73,10 +73,10 @@ internal extension Sequence {
         var count = 0
 
         // Iterate characters
-        for unicodeScalar in self {
+        for element in self {
 
             // Check if the character is valid
-            if closure(unicodeScalar) {
+            if closure(element) {
 
                 // Success, increment accumulation
                 count += 1
