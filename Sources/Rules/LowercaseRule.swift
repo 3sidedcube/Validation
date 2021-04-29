@@ -7,27 +7,41 @@
 
 import Foundation
 
-/// `ValidationRule` checking if a given entity has a sufficient number of lowercase characters.
-/// Specifically, assert `string` contains at least `nCharacters` lowercase characters.
-public class LowercaseRule: CharacterSetRule {
+/// `ValidationRule` to check if an input (validation) `String` contains at
+/// least `nCharacters` lowercase characters.
+public struct LowercaseRule {
 
-    /// Initialize with `nCharacters` using `.lowercaseLetters` for `characterSet`
+    /// Number of character occurrences required
+    public var nCharacters: Int
+
+    /// Default public memberwise initializer
     ///
-    /// - Parameter nCharacters: `Int` defaulting to 1
+    /// - Parameters:
+    ///   - nCharacters: `Int` defaulting to `1`
     public init(nCharacters: Int = 1) {
-        super.init(
-            nCharacters: nCharacters,
-            characterSet: .lowercaseLetters
-        )
+        self.nCharacters = nCharacters
     }
+}
 
-    // MARK: - ValidationRule
+// MARK: - CharacterSetRule
 
-    override public var rule: String {
+extension LowercaseRule: CharacterSetRule {
+
+    /// - Returns: The `.lowercaseLetters` `CharacterSet`
+    public var characterSet: CharacterSet {
+        return .lowercaseLetters
+    }
+}
+
+// MARK: - ValidationRule
+
+extension LowercaseRule: ValidationRule {
+
+    public var rule: String {
         return "Input must have at least \(nCharacters) lowercase character\(nCharacters.s)"
     }
 
-    override public var localizationKey: String {
+    public var localizationKey: String {
         return "_VALIDATION_RULE_LOWERCASE"
     }
 }

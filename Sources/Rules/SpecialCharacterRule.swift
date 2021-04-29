@@ -9,38 +9,58 @@ import Foundation
 
 /// `ValidationRule` checking if a given entity has a sufficient number of special characters.
 /// Specifically, assert `string` contains at least `nCharacters` special characters.
-public class SpecialCharacterRule: CharacterSetRule {
+public struct SpecialCharacterRule {
 
-    /// Initialize with `nCharacters` using `String.specialCharacters` for `characterSet`
+    /// Number of character occurrences required
+    public var nCharacters: Int
+
+    /// `CharacterSet` to count occurrences from
+    public var characterSet: CharacterSet
+
+    /// Default public memberwise initializer
     ///
     /// - Parameters:
-    ///   - nCharacters: `Int` defaulting to 1
-    ///   - string: `String` special characters as a `String`
+    ///   - nCharacters: `Int` defaulting to `1`
+    ///   - characterSet: `CharacterSet` defaulting to `.specialCharacters`
     public init(
         nCharacters: Int = 1,
-        charactersIn string: String = .specialCharacters
+        characterSet: CharacterSet = .specialCharacters
     ) {
-        super.init(
-            nCharacters: nCharacters,
-            characterSet: CharacterSet(charactersIn: string)
-        )
+        self.nCharacters = nCharacters
+        self.characterSet = characterSet
     }
+}
 
-    // MARK: - ValidationRule
+// MARK: - CharacterSetRule
 
-    override public var rule: String {
+extension SpecialCharacterRule: CharacterSetRule {
+}
+
+// MARK: - ValidationRule
+
+extension SpecialCharacterRule: ValidationRule {
+
+    public var rule: String {
         return "Input must have at least \(nCharacters) special character\(nCharacters.s)"
     }
 
-    override public var localizationKey: String {
+    public var localizationKey: String {
         return "_VALIDATION_RULE_SPECIAL_CHARACTER"
     }
 }
 
 // MARK: - String + SpecialCharacters
 
-public extension String {
+private extension String {
 
-    /// Default special characters
+    /// Default `String` for special characters
     static let specialCharacters = ",./?<>!@£$%^&*()-_=+{}[]'\"\\|`~"
+}
+
+// MARK: - CharacterSet + SpecialCharacters
+
+public extension CharacterSet {
+
+    /// Default `CharacterSet` for special characters
+    static let specialCharacters = CharacterSet(charactersIn: .specialCharacters)
 }

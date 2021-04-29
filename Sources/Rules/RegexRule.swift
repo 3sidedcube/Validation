@@ -9,7 +9,7 @@ import Foundation
 
 /// `ValidationRule` checking if a regular expression passes for a given entity.
 /// Specifically assert there exists a range of the `regex` in `string`.
-public class RegexRule {
+public struct RegexRule {
 
     /// Pattern to be evaluated against a given entity.
     /// If there exists a `Range` of this `regex` in the given entity then we consider the pass

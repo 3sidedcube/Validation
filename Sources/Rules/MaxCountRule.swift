@@ -7,12 +7,12 @@
 
 import Foundation
 
-/// `ValidationRule` for checking if a given entity has less than or equal to the `max`
-/// number of characters requirement.
-/// Specifically, assert `string.count <= max` is satisfied.
+/// `ValidationRule` to check if a given `String` has less than or equal to the `max`
+/// number of characters.
 public struct MaxCountRule {
 
     /// Maximum number of characters required for the entity to be valid.
+    /// 
     /// This value is **inclusive**.
     public var max: Int
 
@@ -29,7 +29,7 @@ public struct MaxCountRule {
 
 extension MaxCountRule: ValidationRule {
 
-    /// Ensure `count` of the given `string` is greater than or equal to `min`.
+    /// Ensure `count` of the given `string` is less than or equal to `max`.
     ///
     /// - Parameter string: `String` input
     public func validate(string: String) -> Bool {

@@ -7,12 +7,12 @@
 
 import Foundation
 
-/// `ValidationRule` for checking if a given entity has greater than or equal to the `min`
-/// number of characters requirement.
-/// Specifically, assert `string.count >= min` is satisfied.
+/// `ValidationRule` to check if a given `String` has greater than or equal to the `min`
+/// number of characters.
 public struct MinCountRule {
 
     /// Minimum number of characters required for the entity to be valid.
+    /// 
     /// This value is **inclusive**.
     public var min: Int
 

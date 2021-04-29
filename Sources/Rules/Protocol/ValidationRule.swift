@@ -26,7 +26,7 @@ public protocol ValidationRule {
     var localizationKey: String { get }
 }
 
-// MARK: - ValidationRule + Extensions
+// MARK: - Extensions
 
 public extension ValidationRule {
 

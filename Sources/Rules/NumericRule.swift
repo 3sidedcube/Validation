@@ -7,27 +7,41 @@
 
 import Foundation
 
-/// `ValidationRule` checking if a given entity has a sufficient number of numeric characters.
-/// Specifically, assert `string` contains at least `nCharacters` numeric characters.
-public class NumericRule: CharacterSetRule {
+/// `ValidationRule` to check if an input (validation) `String` contains at
+/// least `nCharacters` uppercase characters.
+public struct NumericRule {
 
-    /// Initialize with `nCharacters` using `String.numeric` for `characterSet`
+    /// Number of character occurrences required
+    public var nCharacters: Int
+
+    /// Default public memberwise initializer
     ///
-    /// - Parameter nCharacters: `Int` defaulting to 1
+    /// - Parameters:
+    ///   - nCharacters: `Int` defaulting to `1`
     public init(nCharacters: Int = 1) {
-        super.init(
-            nCharacters: nCharacters,
-            characterSet: CharacterSet(charactersIn: .numeric)
-        )
+        self.nCharacters = nCharacters
     }
+}
 
-    // MARK: - ValidationRule
+// MARK: - CharacterSetRule
 
-    override public var rule: String {
+extension NumericRule: CharacterSetRule {
+
+    /// - Returns: The `.uppercaseLetters` `CharacterSet`
+    public var characterSet: CharacterSet {
+        return CharacterSet(charactersIn: .numeric)
+    }
+}
+
+// MARK: - ValidationRule
+
+extension NumericRule: ValidationRule {
+
+    public var rule: String {
         return "Input must have at least \(nCharacters) numeric character\(nCharacters.s)"
     }
 
-    override public var localizationKey: String {
+    public var localizationKey: String {
         return "_VALIDATION_RULE_NUMERIC"
     }
 }
